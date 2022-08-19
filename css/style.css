@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* -------------------sec-1---------------- */
+
+.sec-1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(58, 57, 57, 0.4), rgba(58, 57, 57, 0.4)), url(../assests/home.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
+/* -----------------navbar--------------- */
+
+nav {
+    max-width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 8rem;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    padding: 0.7rem 3.7rem;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li::after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 0;
+    margin: auto;
+    background: rgb(253, 2, 44);
+    transition: all 0.4s linear;
+
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+
+/* ---------------------------center-text----------------- */
+
+
+.center-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    max-width: 90%;
+    margin: auto;
+    height: 80vh;
+
+}
+
+.about-me {
+    padding: 0 15rem;
+    text-align: right;
+}
+
+.my-image img {
+    width: 32rem;
+    height: 32rem;
+    border: 0.1rem solid white;
+    transition: 0.3s linear;
+    border-radius: 2rem;
+
+}
+
+.my-image img:hover {
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.3rem rgb(175, 172, 172);
+    /* width: 32.5rem;
+    height: 28.5rem; */
+}
+
+.center-text h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    position: relative;
+}
+
+.center-text h1::before {
+    content: "my_self_akshay_chauhan";
+    color: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-right: solid 0.4rem black;
+    animation: slide 6s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+.center-text h2 {
+    font-size: 3rem;
+    color: white;
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.center-text p {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: rgb(253, 237, 4);
+}
+
+/* <!-- ---------------------second section------------------- --> */
+
+.sec-2 {
+    margin: 5rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-4 {
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(133, 131, 131);
+    padding: 5rem 4rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.row-4 h1 {
+    font-size: 3rem;
+}
+
+.row-4 p {
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+.row-4 a {
+    padding: 0.8rem 1.8rem;
+    border: 0.1rem solid black;
+    font-size: 2rem;
+    text-decoration: none;
+    color: blue;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.row-4 a:hover {
+    background: linear-gradient(rgba(58, 57, 57, 0.4), rgba(58, 57, 57, 0.4));
+    color: white;
+}
+
+/* -------------------footer--------------------- */
+
+footer{
+    background-color: black;
+    text-align: center;
+    bottom: 0;
+}
+.footer-cont{
+    max-width: 50%;
+    margin: auto;
+}
+
+.footer-cont h1{
+    padding-top: 3rem;
+    color: white;
+}
+footer p{
+    color: white;
+    font-size: 2rem;
+    border: 0.1rem solid white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+}
+.row1, .row3{
+    margin: 3rem 0;
+}
+

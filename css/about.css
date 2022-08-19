@@ -1,0 +1,51 @@
+.sec_1 {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(rgba(58, 57, 57, 0.4), rgba(58, 57, 57, 0.4)), url(../assests/WhatsApp\ Image.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 20rem;
+        padding-top: 2rem;
+}
+.text h1{
+        font-size: 5rem;
+        color: white;
+}
+.text h2{
+        font-size: 3.8rem;
+        padding: 2rem 0;
+        color: white;
+        animation: sliding 1.5s linear infinite;
+        animation-direction: alternate;
+}
+@keyframes sliding{
+        0%{
+            padding-left: 4rem;
+        }
+        100%{
+            padding-right: 4rem;
+        }
+    
+    }
+.text p{
+        font-size: 2.5rem;
+        font-weight: 600;
+        max-width: 80%;
+}
+
+.about-img img{
+        width: 36rem;
+        border: solid 0.1rem white;
+        border-radius: 30rem;
+}
+
+.about-img img:hover{
+        box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgb(133, 131, 131);
+}
