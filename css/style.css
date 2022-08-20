@@ -15,16 +15,18 @@ html {
     height: 100vh;
     width: 100%;
     background: linear-gradient(rgba(58, 57, 57, 0.4), rgba(58, 57, 57, 0.4)), url(../assests/home.jpg);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+    position: relative;
+
 }
 
 /* -----------------navbar--------------- */
 
 nav {
-    max-width: 80%;
-    margin: auto;
-    padding: 2rem 0;
+    max-width: 100%;
+    padding: 2rem 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +34,8 @@ nav {
 
 .logo img {
     width: 8rem;
-    border-radius: 50%;
+    height: 5rem;
+    border: 0.1rem solid white;
 }
 
 nav ul {
@@ -44,6 +47,14 @@ nav ul li {
     font-size: 2.2rem;
     text-transform: capitalize;
     padding: 0.7rem 3.7rem;
+}
+.menu-bar img{
+    width: 6rem;
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
+    display: none;
+    cursor: pointer;
 }
 
 
@@ -75,16 +86,14 @@ nav ul li:hover::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5rem;
     max-width: 90%;
     margin: auto;
-    height: 80vh;
+    height: 70vh;
 
 }
 
 .about-me {
-    padding: 0 15rem;
-    text-align: right;
+    padding: 0 17.2rem;
 }
 
 .my-image img {
@@ -108,13 +117,12 @@ nav ul li:hover::after {
     color: white;
     font-weight: 900;
     position: relative;
+    max-width: 76rem;
 }
 
 .center-text h1::before {
     content: "my_self_akshay_chauhan";
     color: black;
-    top: 0;
-    left: 0;
     position: absolute;
     border-right: solid 0.4rem black;
     animation: slide 6s linear infinite;
@@ -217,4 +225,116 @@ footer p{
 .row1, .row3{
     margin: 3rem 0;
 }
+
+@media only screen and (max-width:1520px){
+    html{
+        font-size: 55%;
+
+    }
+    .about-me{
+        padding: 0 15rem;
+    }
+    .center-text{
+        padding: 3rem 0;
+    }
+
+}
+
+@media only screen and (max-width:1350px){
+    html{
+        font-size: 48%;
+    }
+    .about-me{
+        padding: 0 10rem;
+    }
+    .center-text{
+        padding: 5rem 0;
+    }
+ 
+}
+@media only screen and (max-width:1160px){
+     html{
+         font-size: 38%;
+}
+    .about-me{
+        padding: 0 6rem;
+    }
+    .center-text{
+        padding: 8rem 0;
+    }
+}
+
+@media only screen and (max-width:990px){
+    
+    .center-text{
+        padding: 10rem 0rem;
+        /* flex-direction: column;
+        text-align: center;
+         */
+    }
+}
+@media only screen and (max-width:890px){
+    .center-text{
+        padding: 10rem 0rem;
+    }
+}
+@media only screen and (max-width:790px){
+    nav ul{
+        background-color: rgb(255, 31, 61);
+        position: absolute;
+        right: 0;
+        top: 10rem;
+        padding: 2rem 0;
+        height: 92vh;
+        z-index: 1;
+        
+    }
+    .sec-1{
+        overflow: hidden;
+    }
+    .menu-bar img{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        padding: 2rem 5rem;
+    }
+    
+}
+
+@media only screen and (max-width:690px){
+    
+    .about-me{
+        padding: 0;
+    }
+
+    .my-image img {
+        width: 28rem;
+        height: 28rem;
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .center-text{
+        padding: 15rem 0;
+        flex-direction: column;
+    }
+    .center-text h1 {
+        font-size: 3rem;
+        max-width: 45rem;
+    }
+    .center-text h2{
+        font-size: 2.5rem;
+    } 
+    .center-text p{
+        font-size: 1.2rem;
+    } 
+    .sec-2{
+        flex-direction: column;
+    }
+    .row-4{
+        margin: 2rem 0;
+    }
+}
+
+
 
